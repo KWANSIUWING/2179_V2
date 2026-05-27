@@ -1,6 +1,6 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-"title": { "text": "Malaysia States with Highest GDP (US$)" },
+"title": { "text": "Top 3 Malaysia States with Highest GDP (US$)" },
 "data": {
 "url": "myGDP.csv"
 },

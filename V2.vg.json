@@ -1,6 +1,6 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-"title": { "text": "Malaysia Cities with Highest Population" },
+"title": { "text": "Top 10 Malaysia Cities with Highest Population" },
 "data": {
 "url": "my.csv"
 },
