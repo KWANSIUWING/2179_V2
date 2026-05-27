@@ -1,0 +1,10 @@
+city,lat,lng,country,iso2,admin_name,capital,population,population_proper
+Kuala Lumpur,3.1478,101.6953,Malaysia,MY,Kuala Lumpur,primary,8911000,1768000
+Klang,3.0333,101.45,Malaysia,MY,Selangor,,878000,878000
+Ipoh,4.6,101.07,Malaysia,MY,Perak,admin,866772,866772
+Taman Ria,4.6333,101.1167,Malaysia,MY,Perak,,858118,858118
+Seberang Jaya,5.4083,100.3696,Malaysia,MY,Pulau Pinang,,815767,815767
+Johor Bahru,1.4556,103.7611,Malaysia,MY,Johor,admin,797882,797882
+George Town,5.4111,100.3356,Malaysia,MY,Pulau Pinang,admin,794313,794313
+Petaling Jaya,3.1073,101.6067,Malaysia,MY,Selangor,,638516,638516
+Kuantan,3.8167,103.3333,Malaysia,MY,Pahang,admin,607778,607778

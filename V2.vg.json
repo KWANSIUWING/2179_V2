@@ -1,0 +1,13 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"title": { "text": "Malaysia Cities with Highest Population" },
+"data": {
+"url": "my.csv"
+},
+"mark": {"type":"bar", "color": "#FFA500"},
+"encoding": {
+
+"x": { "field": "population", "type": "quantitative"},
+"y": { "field": "city", "type": "nominal", "sort": "-x"}
+}
+}

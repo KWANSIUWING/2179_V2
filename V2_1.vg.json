@@ -1,0 +1,17 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"title": { "text": "Malaysia States with Highest GDP (US$)" },
+"data": {
+"url": "myGDP.csv"
+},
+"mark": {"type":"line", "point": true, "color": "#FFA500"},
+"encoding": {
+
+"x": { "field": "Year", "type": "nominal"},
+"y": { "field": "GDP", "type": "quantitative"},
+"color": {
+      "field": "State",
+      "type": "nominal",
+      "title": "State"}
+}
+}
