@@ -12,3 +12,8 @@ var vg_3 = "V2_2.vg.json";
 vegaEmbed("#scatter_plot1", vg_3).then(function(result) {
 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
+
+var vg_4 = "V2_3.vg.json";
+vegaEmbed("#heat_map1", vg_4).then(function(result) {
+// Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
