@@ -1,6 +1,6 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-"title": { "text": "Top 5 Malaysia States with Largest Area (km2)" },
+"title": { "text": "Malaysia States GDP(2024 US$) vs Area (km2)" },
 "data": {
 "url": "myAreaGDP.csv"
 },
