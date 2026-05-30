@@ -5,6 +5,7 @@
 "url": "my.csv"
 },
 "mark": "bar",
+"background": "transparent",
 "encoding": {
 
 "x": { "field": "population", "type": "quantitative"},

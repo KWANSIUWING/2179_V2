@@ -2,6 +2,7 @@
 display: flex;
 flex-wrap: wrap;
 justify-content: space-evenly;
+background-color: rgba(255, 255, 255, 0.5); 
 }
 
 .dm-serif-display-regular {
@@ -16,4 +17,13 @@ justify-content: space-evenly;
   font-style: italic;
 }
 
+body {
+  background-image: url('my.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
+.chart {
+  background-color: transparent; 
+}

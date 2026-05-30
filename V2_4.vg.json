@@ -6,6 +6,7 @@
 "url": "hh_lq_state.csv"
 },
 "mark": "rect",
+"background": "transparent",
 "encoding": {
 
 "y": {"bin":{"maxbins": 10}, "field": "Area", "type": "quantitative"},

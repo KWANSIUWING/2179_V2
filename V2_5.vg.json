@@ -5,6 +5,7 @@
 "url": "KL.csv"
 },
 "mark": "arc",
+"background": "transparent",
 "encoding": {
 "theta": {"field": "population", "type": "quantitative"},
 "color": {"field": "ethnicity", "type": "nominal"},

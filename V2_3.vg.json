@@ -5,6 +5,7 @@
 "url": "myAreaGDP.csv"
 },
 "mark": "bar",
+"background": "transparent",
 "encoding": {
 
 "y": { "field": "State", "type": "nominal", "sort": "-x"},

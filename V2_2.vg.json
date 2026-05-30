@@ -5,6 +5,7 @@
 "url": "myArea.csv"
 },
 "mark": "point",
+"background": "transparent",
 "encoding": {
 
 "x": { "field": "Population", "type": "quantitative"},

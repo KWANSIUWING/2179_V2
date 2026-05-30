@@ -5,7 +5,7 @@
 "url": "myGDP.csv"
 },
 "mark": {"type":"line", "point": true},
-"background": "rgba(255, 255, 255, 0.5)",
+"background": "transparent",
 "encoding": {
 
 "x": { "field": "Year", "type": "nominal"},
