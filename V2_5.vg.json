@@ -5,12 +5,22 @@
 "url": "KL.csv"
 },
 "mark": "arc",
+"selection": {
+"ethnicity_highlight": {
+"type": "multi",
+"fields": ["ethnicity"],
+"bind": "legend"
+}},
 "background": "transparent",
 "encoding": {
 "theta": {"field": "population", "type": "quantitative"},
 "color": {"field": "ethnicity", "type": "nominal"},
 "tooltip": [{"field":"city", "type": "nominal", "title":"city"},
 {"field":"ethnicity", "type": "nominal", "title":"ethnicity"},
-{"field":"population", "type": "quantitative", "title":"population"}]
+{"field":"population", "type": "quantitative", "title":"population"}],
+"opacity": {
+"condition": {"selection": "ethnicity_highlight", "value": 1.0},
+"value": 0.2
+}
 }
 }

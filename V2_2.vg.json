@@ -5,6 +5,12 @@
 "url": "myArea.csv"
 },
 "mark": "point",
+"selection": {
+"state_highlight": {
+"type": "multi",
+"fields": ["State"],
+"bind": "legend"
+}},
 "background": "transparent",
 "encoding": {
 
@@ -17,6 +23,10 @@
   }},
   "tooltip": [{"field":"State", "type": "nominal", "title":"State"},
 {"field":"Area", "type": "quantitative", "title":"Area"},
-{"field":"Population", "type": "quantitative", "title":"Population"}]
+{"field":"Population", "type": "quantitative", "title":"Population"}],
+"opacity": {
+"condition": {"selection": "state_highlight", "value": 1.0},
+"value": 0.2
+}
 }
 }
