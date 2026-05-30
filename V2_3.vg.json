@@ -4,14 +4,14 @@
 "data": {
 "url": "myAreaGDP.csv"
 },
-"mark": "rect",
+"mark": "bar",
 "encoding": {
 
-"y": { "field": "State", "type": "nominal"},
-"x": {"bin": true, "field": "Area", "type": "quantitative"},
-"color": {
-      "field": "GDP",
-      "type": "quantitative",
-      "title": "GDP(2024)"}
+"y": { "field": "State", "type": "nominal", "sort": "-x"},
+"x": { "field": "Area", "type": "quantitative"},
+"color": {"field": "GDP", "type": "quantitative", "title": "GDP(2024)"},
+"tooltip": [{"field":"State", "type": "nominal", "title":"State"},
+{"field":"Area", "type": "quantitative", "title":"Area"},
+{"field":"GDP", "type": "quantitative", "title":"GDP(2024)"}]
 }
 }

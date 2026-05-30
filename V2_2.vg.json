@@ -9,9 +9,13 @@
 
 "x": { "field": "Population", "type": "quantitative"},
 "y": { "field": "Area", "type": "quantitative"},
-"color": {
-      "field": "State",
-      "type": "nominal",
-      "title": "State"}
+"color": {"field": "State", "type": "nominal", "title": "State",
+"scale":{
+    "domain": ["Johor", "Sarawak","Sabah","Pahang","Perak" ],
+    "range": ["#e41a1c", "#377eb8","#9c755f", "#ff9da7", "#66a61e"]
+  }},
+  "tooltip": [{"field":"State", "type": "nominal", "title":"State"},
+{"field":"Area", "type": "quantitative", "title":"Area"},
+{"field":"Population", "type": "quantitative", "title":"Population"}]
 }
 }

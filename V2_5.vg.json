@@ -1,0 +1,15 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"title": { "text": "The Ethnicity Compositioin of the Largest Malaysia City(KL)" },
+"data": {
+"url": "KL.csv"
+},
+"mark": "arc",
+"encoding": {
+"theta": {"field": "population", "type": "quantitative"},
+"color": {"field": "ethnicity", "type": "nominal"},
+"tooltip": [{"field":"city", "type": "nominal", "title":"city"},
+{"field":"ethnicity", "type": "nominal", "title":"ethnicity"},
+{"field":"population", "type": "quantitative", "title":"population"}]
+}
+}

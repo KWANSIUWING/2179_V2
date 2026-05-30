@@ -1,0 +1,15 @@
+
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"title": { "text": "Malaysia States Living Quarters vs Area(km2)" },
+"data": {
+"url": "hh_lq_state.csv"
+},
+"mark": "rect",
+"encoding": {
+
+"y": {"bin":{"maxbins": 10}, "field": "Area", "type": "quantitative"},
+"x": {"bin":{"maxbins": 10}, "field": "Living_quarters", "type": "quantitative"},
+"color": {"aggregate": "count", "type": "quantitative", "title": "Count of States"}
+}
+}

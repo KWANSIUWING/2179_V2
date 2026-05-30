@@ -9,9 +9,13 @@
 
 "x": { "field": "Year", "type": "nominal"},
 "y": { "field": "GDP", "type": "quantitative"},
-"color": {
-      "field": "State",
-      "type": "nominal",
-      "title": "State"}
+"color": {"field": "State", "type": "nominal", "title": "State",
+"scale":{
+    "domain": ["Johor", "Sarawak","Kuala Lumpur and  Putrajaya","Selangor"],
+    "range": ["#e41a1c", "#377eb8","#76b7b2", "#edc948"]
+  }},
+   "tooltip": [{"field":"State", "type": "nominal", "title":"State"},
+{"field":"GDP", "type": "quantitative", "title":"GDP"},
+{"field":"Year", "type": "nominal", "title":"Year"}]
 }
 }
