@@ -4,10 +4,21 @@
 "data": {
 "url": "my.csv"
 },
-"mark": {"type":"bar", "color": "#FFA500"},
+"mark": "bar",
 "encoding": {
 
 "x": { "field": "population", "type": "quantitative"},
-"y": { "field": "city", "type": "nominal", "sort": "-x"}
+"y": { "field": "city", "type": "nominal", "sort": "-x"},
+"color": {"field": "city", "type": "nominal", "title": "city",
+"scale":{
+    "domain": ["Kuala Lumpur", "Klang","Ipoh","Taman Ria",
+    "Seberang Jaya", "Johor Bahru", "George Town", "Petaling Jaya",
+    "Kuantan"],
+    "range": ["#ff7b00", "#377eb8","#377eb8", "#377eb8", 
+    "#377eb8", "#377eb8", "#377eb8", "#377eb8", "#377eb8"]
+  }},
+
+ "tooltip": [{"field":"city", "type": "nominal", "title":"city"},
+{"field":"population", "type": "quantitative", "title":"population"}]
 }
 }
