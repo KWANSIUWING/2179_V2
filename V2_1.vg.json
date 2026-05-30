@@ -6,6 +6,13 @@
 },
 "mark": {"type":"line", "point": true},
 "background": "transparent",
+"selection": {
+"state_highlight": {
+"type": "multi",
+"fields": ["State"],
+"bind": "legend"
+}
+},
 "encoding": {
 
 "x": { "field": "Year", "type": "nominal"},
@@ -17,6 +24,10 @@
   }},
    "tooltip": [{"field":"State", "type": "nominal", "title":"State"},
 {"field":"GDP", "type": "quantitative", "title":"GDP"},
-{"field":"Year", "type": "nominal", "title":"Year"}]
+{"field":"Year", "type": "nominal", "title":"Year"}],
+"opacity": {
+"condition": {"selection": "state_highlight", "value": 0.6},
+"value": 0.2
+}
 }
 }
