@@ -1,0 +1,29 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"title": { "text": "Malaysia State/W.P. Population Change 2023" },
+"data": {
+"url": "bs.csv"
+},
+"background": "transparent",
+"encoding": {
+
+"x": { "field": "count", "type": "quantitative"},
+"y": { "field": "state_WP", "type": "nominal"},
+"color": {"field": "state_WP", "type": "nominal", "title": "State_WP"}
+},
+"layer": [
+    {"mark":"line",
+    "encoding": {"detail":{"field":"state_WP","type": "nominal"},
+"color": {"value": "#FF69B4"}} },
+    {"mark":{"type":"point", "filled": true},
+    "encoding": {
+        "color":{"field":"type","type": "nominal","scale": {
+            "domain": ["birth", "death"],
+            "range": ["#FFC0CB", "#333333"]},
+        "title":"type"},
+    "size": {"value": 100},
+        "opacity": {"value": 1},"tooltip": [{"field":"state_WP", "type": "nominal", "title":"state_WP"},
+{"field":"count", "type": "quantitative", "title":"count"},
+{"field":"type", "type": "nominal","title":"type"}]}}
+]
+}

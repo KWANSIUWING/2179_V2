@@ -27,3 +27,8 @@ var vg_6 = "V2_5.vg.json";
 vegaEmbed("#pie_chart1", vg_6).then(function(result) {
 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
+
+var vg_7 = "V2_6.vg.json";
+vegaEmbed("#dump_bell1", vg_7).then(function(result) {
+// Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
