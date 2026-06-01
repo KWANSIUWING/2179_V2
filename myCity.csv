@@ -1,0 +1,13 @@
+city,lat,lng,country,iso2,admin_name,capital,population,year,area_km2,density
+Kuala Lumpur,3.1478,101.6953,Malaysia,MY,Kuala Lumpur,primary,9085737,2020,2793,3062
+George Town,5.4111,100.3356,Malaysia,MY,Pulau Pinang,admin,2843344,2020,3765,756
+Johor Bahru,1.4556,103.7611,Malaysia,MY,Johor,admin,2487601,2020,4954,502
+Ipoh,4.6,101.07,Malaysia,MY,Perak,admin,984586,2020,1988,495
+Kota Kinabalu,5.975,116.0725,Malaysia,MY,Sabah,admin,949931,2020,3277,290
+Kuala Lumpur,3.1478,101.6953,Malaysia,MY,Kuala Lumpur,primary,7119252,2010,2793,
+George Town,5.4111,100.3356,Malaysia,MY,Pulau Pinang,admin,2331180,2010,3765,
+Johor Bahru,1.4556,103.7611,Malaysia,MY,Johor,admin,1495098,2010,4954,
+Ipoh,4.6,101.07,Malaysia,MY,Perak,admin,828174,2010,1988,
+Kota Kinabalu,5.975,116.0725,Malaysia,MY,Sabah,admin,855556,2010,3277,
+Kuching,1.55,110.3333,Malaysia,MY,,,934515,2020,2031,460
+Kuching,1.55,110.3333,Malaysia,MY,,,857110,2010,2031,

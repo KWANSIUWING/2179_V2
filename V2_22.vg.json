@@ -1,22 +1,21 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-"title": { "text": "Top 10 Malaysia Cities with Largest Population" },
+"title": { "text": "Top 6 Malaysia Cities(Metropolitan Areas) with Largest Area" },
 "data": {
-"url": "my.csv"
+"url": "myCity.csv"
 },
 "mark": "bar",
 "background": "transparent",
 "encoding": {
 
-"x": { "field": "population", "type": "quantitative"},
+"x": { "field": "area_km2", "type": "quantitative"},
 "y": { "field": "city", "type": "nominal", "sort": "-x"},
 "color": {"field": "city", "type": "nominal", "title": "city",
 "scale":{
-    "domain": ["Kuala Lumpur", "Klang","Ipoh","Taman Ria",
-    "Seberang Jaya", "Johor Bahru", "George Town", "Petaling Jaya",
-    "Kuantan"],
-    "range": ["#ff7b00", "#377eb8","#377eb8", "#377eb8", 
-    "#377eb8", "#377eb8", "#377eb8", "#377eb8", "#377eb8"]
+    "domain": ["Kuala Lumpur", "Ipoh",
+     "Johor Bahru", "George Town", "Kuching", "Kota Kinabalu"],
+    "range": ["#377eb8","#377eb8", "#ff7b00", "#377eb8", 
+    "#377eb8", "#377eb8", "#377eb8"]
   }},
 
  "tooltip": [{"field":"city", "type": "nominal", "title":"city"},

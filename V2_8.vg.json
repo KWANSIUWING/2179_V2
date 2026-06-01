@@ -1,0 +1,31 @@
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"title": { "text": "Top 6 Malaysia Cities(Metropolitan areas) with Largest Population" },
+"data": {
+"url": "myCity.csv"
+},
+"mark": "line",
+"width":200,
+"height":400,
+"background": "transparent",
+"selection": {
+"city_highlight": {
+"type": "multi",
+"fields": ["city"],
+"bind": "legend"
+}
+},
+"encoding": {
+
+"x": { "field": "year", "type": "ordinal"},
+"y": { "field": "population", "type": "quantitative"},
+"color": {"field": "city", "type": "nominal", "title": "city"
+,"sort":"-x"},
+
+ "tooltip": [{"field":"city", "type": "nominal", "title":"city"},
+{"field":"population", "type": "quantitative", "title":"population"}],
+"opacity": {
+"condition": {"selection": "city_highlight", "value": 1.0},
+"value": 0.2
+}}
+}
