@@ -1,0 +1,30 @@
+
+{
+"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+"title": { "text": "Malaysia Top6 Cities (Metropolitan Areas) Population Density" },
+"projection": {"type": "mercator"},
+"width":600,
+"height":300,
+"background":"transparent",
+"layer":[
+{"data": {
+  "url": "malaysia.json",
+  "format": {"type": "topojson", "feature": "ne_10m_admin_1_states_provinces"}
+},
+"mark":  {
+        "type": "geoshape",
+        "fill": "#f0f0f0",
+        "stroke": "#999999"
+      }
+},{"data": {
+  "url": "myCityD.csv"},
+"mark": {"type":"circle","stroke":"black"},
+"encoding": {"longitude":{"field":"lng","type": "quantitative"},
+"latitude":{"field":"lat","type": "quantitative"},
+"size": {"value":500},
+"color": {"field":"density", "type": "quantitative", 
+          "scale": {"scheme": "yellowgreen"},
+          "title": "Population Desity (/km2)"}
+}}
+]
+}

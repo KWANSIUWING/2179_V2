@@ -42,3 +42,8 @@ var vg_9 = "V2_22.vg.json";
 vegaEmbed("#bar_chart3", vg_9).then(function(result) {
 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
+
+var vg_10 = "V2_map.vg.json";
+vegaEmbed("#map1", vg_10).then(function(result) {
+// Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
