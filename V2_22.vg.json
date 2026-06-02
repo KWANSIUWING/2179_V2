@@ -19,6 +19,6 @@
   }},
 
  "tooltip": [{"field":"city", "type": "nominal", "title":"city"},
-{"field":"population", "type": "quantitative", "title":"population"}]
+{"field":"area_km2", "type": "quantitative", "title":"area_km2"}]
 }
 }
