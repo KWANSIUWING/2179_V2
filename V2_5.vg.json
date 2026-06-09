@@ -4,7 +4,16 @@
 "data": {
 "url": "KL.csv"
 },
-"mark": "arc",
+"transform": [
+  {
+    "calculate": "datum.population / datum.total_population",
+    "as": "proportion"
+  }
+],
+"mark": {"type": "arc", "innerRadius": 40},"opacity": {
+"condition": {"selection": "ethnicity_highlight", "value": 1.0},
+"value": 0.2
+},
 "selection": {
 "ethnicity_highlight": {
 "type": "multi",
@@ -13,14 +22,16 @@
 }},
 "background": "transparent",
 "encoding": {
-"theta": {"field": "population", "type": "quantitative"},
-"color": {"field": "ethnicity", "type": "nominal"},
+"theta": {"field": "proportion", "type": "quantitative"},
+"color": {"field": "ethnicity", "type": "nominal","scale": {
+    "domain": ["chinese", "bumi", "indian", "others"],
+    "range": ["#F5A623", "#4A90E2", "#E74C8B", "#AAAAAA"]
+  }},
 "tooltip": [{"field":"city", "type": "nominal", "title":"city"},
 {"field":"ethnicity", "type": "nominal", "title":"ethnicity"},
-{"field":"population", "type": "quantitative", "title":"population"}],
-"opacity": {
+{"field":"proportion", "type": "quantitative", "title":"proportion","format":".1%"}]
+,"opacity": {
 "condition": {"selection": "ethnicity_highlight", "value": 1.0},
 "value": 0.2
-}
-}
+}}
 }

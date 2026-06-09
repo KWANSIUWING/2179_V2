@@ -1,10 +1,10 @@
 {
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-"title": { "text": "Top 5 Malaysia States with Largest Area (km2)" },
+"title": { "text": "Top 5 Malaysia States with Largest Area (km2) vs Population" },
 "data": {
 "url": "myArea.csv"
 },
-"mark": "point",
+"mark": {"type":"point", "size":200},
 "selection": {
 "state_highlight": {
 "type": "multi",

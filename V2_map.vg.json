@@ -24,7 +24,11 @@
 "size": {"value":500},
 "color": {"field":"density", "type": "quantitative", 
           "scale": {"scheme": "yellowgreen"},
-          "title": "Population Desity (/km2)"}
+          "title": "Population Desity (/km2)"},
+"tooltip" : [{"field":"city", "type": "nominal", "title":"city"},
+{"field":"density", "type": "quantitative", "title":"population density"},
+{"field":"lat", "type": "quantitative", "title":"latitude"},
+{"field":"lng", "type":"quantitative","title":"longitude"}]
 }}
 ]
 }
