@@ -2,9 +2,22 @@
 "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 "title": { "text": "Malaysia States Birth across Year" },
 "data": {
-"url": "birth_state.csv"
+"url": "birth_state.csv",  "format": {"parse": {"abs": "number"}}
 },
-"mark": "area",
+"transform": [
+    {
+      "window": [
+        {
+          "op": "rank",
+          "field": "abs",
+          "as": "rank"
+        }
+      ],
+      "groupby": ["date"],
+      "sort": [{"field": "abs", "order": "descending"}]
+    }
+  ],
+"mark": "line",
 "background": "transparent",
 "selection": {
 "state_highlight": {
@@ -16,15 +29,16 @@
 "encoding": {
 
 "x": { "field": "date", "type": "ordinal"},
-"y": { "field": "abs", "type": "quantitative", "title":"new brith"},
+"y": { "field": "rank", "type": "quantitative", "title":"new brith rank", 
+"scale": {"reverse": true, "domain":[1,16]}, "axis":{"values": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]}},
 "color": {"field": "state", "type": "nominal", "title": "state","scale":{
-    "domain": ["Johor", "Sarawak","Sabah","Pahang","Perak","Kedah",
-    "Kelantan", "Melaka","Selangor", "Perlis","Pulau Pinang",
-    "Negeri Sembilan", "Terengganu","W.P. Kuala Lumpur","W.P. Labuan",
-    "W.P. Putrajaya"],
-    "range": ["#e41a1c", "#377eb8","#9c755f", "#ff9da7", "#66a61e",
-     "#984EA3","#FF7F00","#17BECF", "#edc948", "#F781BF","#999999",
-     "#A65628","#B07AA1","#76B7B2","#FFFF33", "#EDC948"]
+    "domain": ["Selangor", "Johor", "Sabah", "Sarawak", "Pahang","Perak","Kedah",
+    "Kelantan", "Melaka", "Perlis","Pulau Pinang",
+    "Negeri Sembilan", "Terengganu","W.P. Kuala Lumpur","W.P. Putrajaya",
+    "W.P. Labuan"],
+    "range": ["#edc948","#e41a1c", "#9c755f", "#377eb8", "#ff9da7", "#66a61e",
+     "#984EA3","#FF7F00","#17BECF", "#F781BF","#999999",
+     "#A65628","#B07AA1","#76B7B2","#EDC948","#FFFF33" ]
   }},
 
  "tooltip": [{"field":"state", "type": "nominal", "title":"state"},
