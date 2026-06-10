@@ -17,7 +17,7 @@
       "sort": [{"field": "abs", "order": "descending"}]
     }
   ],
-"mark": "line",
+"mark": {"type":"line", "point":true},
 "background": "transparent",
 "selection": {
 "state_highlight": {
