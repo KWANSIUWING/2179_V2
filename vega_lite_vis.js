@@ -1,5 +1,5 @@
 var vg_1 = "V2_8.vg.json";
-vegaEmbed("#bar_chart1", vg_1).then(function(result) {
+vegaEmbed("#slope_chart1", vg_1).then(function(result) {
 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 
@@ -14,7 +14,7 @@ vegaEmbed("#scatter_plot1", vg_3).then(function(result) {
 }).catch(console.error);
 
 var vg_4 = "V2_3.vg.json";
-vegaEmbed("#bar_chart2", vg_4).then(function(result) {
+vegaEmbed("#bar_chart1", vg_4).then(function(result) {
 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 
@@ -34,12 +34,12 @@ vegaEmbed("#dump_bell1", vg_7).then(function(result) {
 }).catch(console.error);
 
 var vg_8 = "V2_7.vg.json";
-vegaEmbed("#area_chart1", vg_8).then(function(result) {
+vegaEmbed("#bump_chart1", vg_8).then(function(result) {
 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 
-var vg_9 = "V2_22.vg.json";
-vegaEmbed("#bar_chart3", vg_9).then(function(result) {
+var vg_9 = "V2_9.vg.json";
+vegaEmbed("#bar_chart2", vg_9).then(function(result) {
 // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 
